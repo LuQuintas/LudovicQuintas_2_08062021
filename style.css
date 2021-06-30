@@ -1,0 +1,43 @@
+/* aides
+bleu            #0065FC
+plus claire     #DEEBFF
+gris            #F2F2F2
+*/
+@font-face {
+    font-family:"raleway";
+    src: url(/fonts/Raleway-VariableFont_wght.ttf);
+}
+body{
+    margin: 0;   
+}
+header{
+    height: 50px;
+    margin: 20px;
+}
+nav{
+    position: absolute;
+    margin-right: 30px;
+    right: 30px;
+    top: 30px;
+}
+a{
+    font-family: "raleway";
+    font-size: 16px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+.hebergements{
+    color: #0065FC;
+    padding-top: 31px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 2px solid #0065FC;
+}
+.sign{
+    font-weight: bolder;
+    color: #0065FC;
+}
+.activites:hover{
+    color: #0065FC;
+}
