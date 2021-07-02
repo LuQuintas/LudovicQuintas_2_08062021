@@ -5,7 +5,12 @@ gris            #F2F2F2
 */
 @font-face {
     font-family:"raleway";
-    src: url(/fonts/Raleway-VariableFont_wght.ttf);
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "raleaway-italic";
+    src: url(fonts/Raleway-Italic-VariableFont_wght.ttf);
+
 }
 body{
     margin: 0;
@@ -24,7 +29,7 @@ nav{
     margin-right: 0; 
 }
 a{
-    padding: 35px 26px 16px 26px;
+    padding: 33px 26px 16px 26px;
     font-size: 15px;
     font-weight:600;
     text-decoration: none;
@@ -32,18 +37,19 @@ a{
 }
 .hebergements-nav{
     color: #0065FC;
-    border-top: 3px solid #0065FC;
-}
-.activites-nav{
-    font-weight: 500;
+    border-top: 4px solid #0065FC;
 }
 .activites-nav:hover{
     color: #0065FC;
-    border-top: 3px solid #0065fc;
+    border-top: 4px solid #0065fc;
 }
 .sign{
     font-weight:800;
     color: #0065FC;
+}
+.sign:hover{
+    color: #0065FC;
+    border-top: 4px solid #0065fc;
 }
 
 
@@ -83,6 +89,9 @@ input[type=search]{
     color:white;
     border: 0;
     border-radius: 0 0.8rem 0.8rem 0 ;
+}
+.search-button:hover{
+    background-color: #165cc5;
 }
 
 /*MAIN FILTERS*/
