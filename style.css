@@ -227,6 +227,7 @@ i[data-selected="true"]{
 i[data-selected="false"]{
     color: #F2F2F2;
 }
+/*LES PLUS POPULAIRES*/
 aside{
     display: flex;
     flex-direction: column;
@@ -296,4 +297,73 @@ aside span{
     display: inline;
     margin: 0;
 }
+/*ACTIVITÉS*/
+.activity{
+    height: 550px;
+}
+.title-activity{
+    font-size: 25px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+.all-activity{
+    display: flex;
+    justify-content: space-between;
+}
+.linkactivity{
+    width: 302px;
+    height: 450px;;
+    padding: 0;
+}
+.port, .fort-iles, .calanques, .garde-longchamp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 302px;
+    height: 450px;
+}
+.port, .fort, .iles, .calanques, .garde, .longchamp{
+    border-radius: 1rem;
+    box-shadow: 5px 5px 0.8em gray;
+}
+.conteneur-image-large{
+    width: 100%;
+    height: 390px;
+}
+.img-activity{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+.fort{
+    width: 100%;
+    height: 240px;
+}
+.conteneur-image-fort{
+    width: 100%;
+    height: 180px;
+}
+.conteneur-image-iles{
+    width: 100%;
+    height: 110px;
+}
+.garde{
+    width: 100%;
+    height: 200px;
+}
+.conteneur-image-garde{
+    width: 100%;
+    height: 140px;
+}
+.longchamp{
+    width: 100%;
+    height: 210px;
+}
+.conteneur-image-longchamp{
+    width: 100%;
+    height: 155px;
+}
+.title-vignete-activity{
+    font-size: 17px;
+    padding-left: 15px;
 }
