@@ -17,23 +17,25 @@
         <header class="header">
             <img class="logo" src="img/logo/Reservia.svg" alt="Logo Réservia">
             <Nav class="nav">
-                <a class="hebergements-nav" href="Hébergements">Hébergements</a>
-                <a class="activites-nav" href="Activités">Activités</a>
-                <a class="sign" href="Sign">S'inscrire</a>
+                <a class="hebergements-nav" href="#host">Hébergements</a>
+                <a class="activites-nav" href="#activity">Activités</a>
+                <a class="sign" href="#">S'inscrire</a>
             </Nav>
         </header>
-
-                <!----MAIN---->
 
         <main>
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
+
+                <!--SEARCH-->
 
             <div class="search">
                 <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                 <input type="search" value="Marseille,France" id="location">
                 <button class="search-button">Rechercher</button>
             </div>
+
+                <!----FILTERS---->
 
             <div class="filters">
                 <h3>Filtres</h3>
@@ -55,6 +57,8 @@
                 </div>
             </div>
 
+                <!--INFO-->
+
             <div class="info">
                 <i class="fas fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -62,18 +66,18 @@
         
                 <!--HEBERGEMENTS-->
 
-            <div class="host">
+            <div class="host" id="host">
                 <section>
                     <h3 class="title-host">Hébergements à Marseille</h3>
                         <div class="conteneur-vignette">
                             <article class="vignette">
-                                <a class="lien-vignette"href="">
+                                <a class="lien-vignette">
                                     <div class="conteneur-image">
                                         <img class="image-vignette" src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Auberge de la cannebière</h4>
-                                        <p>Nuit à partir de</p><span class="tarif">25€</span>
+                                        <p>Nuit à partir de <span>25€</span></p>
                                     </div>
                                     <div class="stars">
                                         <i data-selected="true" class="fas fa-star" aria-hidden="false"></i>
@@ -85,13 +89,13 @@
                                 </a>
                             </article>
                             <article class="vignette">
-                                <a class="lien-vignette"href="">
+                                <a class="lien-vignette">
                                     <div class="conteneur-image">
                                         <img class="image-vignette" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Hôtel du port</h4>
-                                        <p>Nuit à partir de</p><span class="tarif">52€</span>
+                                        <p>Nuit à partir de <span>52€</span></p>
                                     </div>
                                     <div class="stars">
                                         <i data-selected="true" class="fas fa-star" aria-hidden="false"></i>
@@ -103,13 +107,13 @@
                                 </a>
                             </article>
                             <article class="vignette">
-                                <a class="lien-vignette" href="">
+                                <a class="lien-vignette">
                                     <div class="conteneur-image">
                                         <img class="image-vignette" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Hôtel les mouettes</h4>
-                                        <p>Nuit à partir de</p><span class="tarif">76€</span>
+                                        <p>Nuit à partir de <span>76€</span></p>
                                     </div>
                                     <div class="stars">
                                         <i data-selected="true" class="fas fa-star" aria-hidden="false"></i>
@@ -121,13 +125,13 @@
                                 </a>
                             </article>
                             <article class="vignette">
-                                <a class="lien-vignette" href="">
+                                <a class="lien-vignette">
                                     <div class="conteneur-image">
                                         <img class="image-vignette" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Hôtel de la mer</h4>
-                                        <p>Nuit à partir de</p><span class="tarif">46€</span>
+                                        <p>Nuit à partir de <span>46€</span></p>
                                     </div>
                                     <div class="stars">
                                         <i data-selected="true" class="fas fa-star" aria-hidden="false"></i>
@@ -139,13 +143,13 @@
                                 </a>
                             </article>
                             <article class="vignette">
-                                <a class="lien-vignette" href="">
+                                <a class="lien-vignette">
                                     <div class="conteneur-image">
                                         <img class="image-vignette" src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Auberge Le Panier</h4>
-                                        <p>Nuit à partir de</p><span class="tarif">23€</span>
+                                        <p>Nuit à partir de <span>23€</span></p>
                                     </div>
                                     <div class="stars">
                                         <i data-selected="true" class="fas fa-star" aria-hidden="false"></i>
@@ -157,13 +161,13 @@
                                 </a>
                             </article>
                             <article class="vignette">
-                                <a class="lien-vignette" href="">
+                                <a class="lien-vignette">
                                     <div class="conteneur-image">
                                         <img class="image-vignette" src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Hôtel chez Amina</h4>
-                                        <p>Nuit à partir de</p><span class="tarif">96€</span>
+                                        <p>Nuit à partir de <span>96€</span></p>
                                     </div>
                                     <div class="stars">
                                         <i data-selected="true" class="fas fa-star" aria-hidden="false"></i>
@@ -175,7 +179,7 @@
                                 </a>
                             </article>
                         </div>
-                    <span>Afficher plus</span>
+                        <span class="more"><a class="linkmore" href="#">Afficher plus</a></span>
                 </section>
                 
                 <!--LES PLUS POPULAIRES-->
@@ -187,7 +191,7 @@
                     </div>
                     <div class="conteneur-vignette-popular">
                         <article class="vignette-popular">
-                            <a class="lien-vignette-popular"href="">
+                            <a class="lien-vignette-popular">
                                 <div class="conteneur-image-ppopular">
                                     <img class="image-vignette-popular" src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                                 </div>
@@ -205,7 +209,7 @@
                             </a>
                         </article>
                         <article class="vignette-popular">
-                            <a class="lien-vignette-popular"href="">
+                            <a class="lien-vignette-popular">
                                 <div class="conteneur-image-ppopular">
                                     <img class="image-vignette-popular" src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                                 </div>
@@ -223,7 +227,7 @@
                             </a>
                         </article>
                         <article class="vignette-popular">
-                            <a class="lien-vignette-popular"href="">
+                            <a class="lien-vignette-popular">
                                 <div class="conteneur-image-ppopular">
                                     <img class="image-vignette-popular" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                                 </div>
@@ -240,18 +244,17 @@
                                 </div>
                             </a>
                         </article>
-                        
                     </div>
                 </aside>
             </div>
 
-            <!--Activités-->
+                <!--ACTIVITES-->
 
-            <div class="activity">
+            <div class="activity" id="activity">
                 <h1 class="title-activity" > Actvités à Marseille</h1>
                 <div class="all-activity">
                     <article class="port">
-                        <a class="linkactivity" href="">
+                        <a class="linkactivity">
                             <div class="conteneur-image-large">
                                 <img class="image-vignette"src="img\activites\3_medium\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                             </div>
@@ -260,7 +263,7 @@
                     </article>
                     <div class="fort-iles" >
                         <article class="fort">
-                            <a class="linkactivity" href="">
+                            <a class="linkactivity">
                                 <div class="conteneur-image-fort">
                                     <img class="image-vignette" src="img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                                 </div>
@@ -268,7 +271,7 @@
                             </a>
                         </article>
                         <article class="iles">
-                            <a class="linkactivity" href="">
+                            <a class="linkactivity">
                                 <div class="conteneur-image-iles">
                                     <img class="image-vignette" src="img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                                 </div>
@@ -277,7 +280,7 @@
                         </article>
                     </div>
                     <article class="calanques">
-                        <a class="linkactivity" href="">
+                        <a class="linkactivity">
                             <div class="conteneur-image-large">
                                 <img class="image-vignette" src="img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                             </div>
@@ -286,7 +289,7 @@
                     </article>
                     <div class="garde-longchamp" >
                         <article class="garde">
-                            <a class="linkactivity" href="">
+                            <a class="linkactivity">
                             <div class="conteneur-image-garde" >
                                 <img class="image-vignette" src="img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                             </div>
@@ -294,7 +297,7 @@
                             </a>
                         </article>
                         <article class="longchamp">
-                            <a class="linkactivity" href="">
+                            <a class="linkactivity">
                             <div class="conteneur-image-longchamp">
                                 <img class="image-vignette" src="img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                             </div>
@@ -305,8 +308,26 @@
                 </div>
             </div>
         </main>
-        <footer>
 
+            <!--FOOTER-->
+
+        <footer>
+            <div class="about-footer">
+                <h2>A propos</h2>
+                <p>Fonctionnement du site</p>
+                <p>Conditions générales de vente</p>
+                <p>Données et confidentialité</p>
+            </div>
+            <div class="host-footer">
+                <h2>Nos hébergements</h2>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
+            </div>
+            <div class="assistance-footer">
+                <h2>Assistance</h2>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </div>
         </footer>
 
         
