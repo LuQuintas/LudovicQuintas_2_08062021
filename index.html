@@ -14,56 +14,64 @@
 
                 <!--header-->
 
-        <header class="header">
+        <header>
             <img class="logo" src="img/logo/Reservia.svg" alt="Logo Réservia">
-            <Nav class="nav">
-                <a class="hebergements-nav" href="#host">Hébergements</a>
-                <a class="activites-nav" href="#activity">Activités</a>
-                <a class="sign" href="#">S'inscrire</a>
+            <Nav>
+                <div class="nav">
+                    <a class="hebergements-nav nav-element" href="#host">Hébergements</a>
+                    <a class="activites-nav nav-element" href="#activity">Activités</a>
+                </div>
+                <a class="sign nav-element" href="#">S'inscrire</a>
             </Nav>
         </header>
 
-        <main>
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+        <main class="main">
+            <div class="secondmenu">
+                <div class="titleinfo">
+                    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                    <!--search-->
 
-                <!--search-->
+                <div class="search">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <input type="search" value="Marseille,France" id="location">
+                    <button class="search-button">Rechercher</button>
+                    <button class="search-loupe"><i class="fas fa-search"></i></button>
 
-            <div class="search">
-                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                <input type="search" value="Marseille,France" id="location">
-                <button class="search-button">Rechercher</button>
+                </div>
+
+                    <!--filters-->
+
+                <div class="filters">
+                    <h3>Filtres</h3>
+                    <div class="filters-selection">
+                        <div class="filters-button">
+                            <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                            <span>Économique</span>  
+                        </div>
+                        <div class="filters-button">
+                            <i class="fas fa-child" aria-hidden="true"></i>
+                            <span>Familial</span>
+                        </div>
+                        <div class="filters-button">
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                            <span>Romantique</span>
+                        </div>
+                        <div class="filters-button">
+                            <i class="fas fa-dog" aria-hidden="true"></i>
+                            <span>Animaux autorisés</span>
+                        </div>
+                    </div>
+                </div>
+
+                    <!--info-->
+
+                <div class="info">
+                    <i class="fas fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </div>
-
-                <!--filters-->
-
-            <div class="filters">
-                <h3>Filtres</h3>
-                <div class="filters-button">
-                    <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
-                    <span>Économique</span>  
-                </div>
-                <div class="filters-button">
-                    <i class="fas fa-child" aria-hidden="true"></i>
-                    <span>Familial</span>
-                </div>
-                <div class="filters-button">
-                    <i class="fas fa-heart" aria-hidden="true"></i>
-                    <span>Romantique</span>
-                </div>
-                <div class="filters-button">
-                    <i class="fas fa-dog" aria-hidden="true"></i>
-                    <span>Animaux autorisés</span>
-                </div>
-            </div>
-
-                <!--info-->
-
-            <div class="info">
-                <i class="fas fa-info"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-        
                 <!--hébergements-->
 
             <div class="host" id="host">
@@ -73,7 +81,7 @@
                             <article class="vignette">
                                 <a class="lien-vignette">
                                     <div class="conteneur-image">
-                                        <img class="image-vignette" src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                                        <img class="image-vignette" src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la cannebière, lit superposé">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Auberge de la cannebière</h4>
@@ -91,7 +99,7 @@
                             <article class="vignette">
                                 <a class="lien-vignette">
                                     <div class="conteneur-image">
-                                        <img class="image-vignette" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                                        <img class="image-vignette" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port, chambre blanche avec deux lits une personne">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Hôtel du port</h4>
@@ -109,7 +117,7 @@
                             <article class="vignette">
                                 <a class="lien-vignette">
                                     <div class="conteneur-image">
-                                        <img class="image-vignette" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                                        <img class="image-vignette" src="img/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes, lit double">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Hôtel les mouettes</h4>
@@ -127,7 +135,7 @@
                             <article class="vignette">
                                 <a class="lien-vignette">
                                     <div class="conteneur-image">
-                                        <img class="image-vignette" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                                        <img class="image-vignette" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer, lit double, déco marin">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Hôtel de la mer</h4>
@@ -145,7 +153,7 @@
                             <article class="vignette">
                                 <a class="lien-vignette">
                                     <div class="conteneur-image">
-                                        <img class="image-vignette" src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                                        <img class="image-vignette" src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberfe Le Panier,lit superposé, déco nature bois">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Auberge Le Panier</h4>
@@ -163,7 +171,7 @@
                             <article class="vignette">
                                 <a class="lien-vignette">
                                     <div class="conteneur-image">
-                                        <img class="image-vignette" src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                                        <img class="image-vignette" src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina, lit double">
                                     </div>
                                     <div class="info-image">
                                         <h4 class="title-vignette">Hôtel chez Amina</h4>
@@ -184,7 +192,7 @@
                 
                 <!--les plus populaires-->
 
-                <aside >
+                <aside>
                     <div class="header-popular">
                         <h3 class="title-host">Les plus populaires</h3>
                         <i class="fas fa-chart-line"></i>
@@ -192,8 +200,8 @@
                     <div class="conteneur-vignette-popular">
                         <article class="vignette-popular">
                             <a class="lien-vignette-popular">
-                                <div class="conteneur-image-ppopular">
-                                    <img class="image-vignette-popular" src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                                <div class="conteneur-image-popular">
+                                    <img class="image-vignette-popular" src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=" Hôtel Le soleil du matin, lit double, déco de couleur verte">
                                 </div>
                                 <div class="info-image-popular">
                                     <h4 class="title-image-popular">Hôtel Le soleil du matin</h4>
@@ -210,11 +218,11 @@
                         </article>
                         <article class="vignette-popular">
                             <a class="lien-vignette-popular">
-                                <div class="conteneur-image-ppopular">
-                                    <img class="image-vignette-popular" src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                                <div class="conteneur-image-popular">
+                                    <img class="image-vignette-popular" src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes, lit double, déco chic et sobre">
                                 </div>
                                 <div class="info-image-popular">
-                                    <h4 class="title-image-popular">Au coeur de l'eau <br> Chambres d'hôtes</h4>
+                                    <h4 class="title-image-popular">Au coeur de l'eau<br>Chambres d'hôtes</h4>
                                     <p>Nuit à partir de <span>71€</span></p>
                                     <div class="stars-popular">
                                         <i data-selected="true" class="fas fa-star" aria-hidden="false"></i>
@@ -228,8 +236,8 @@
                         </article>
                         <article class="vignette-popular">
                             <a class="lien-vignette-popular">
-                                <div class="conteneur-image-ppopular">
-                                    <img class="image-vignette-popular" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                                <div class="conteneur-image-popular">
+                                    <img class="image-vignette-popular" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc, lit double">
                                 </div>
                                 <div class="info-image-popular">
                                     <h4 class="title-image-popular">Hôtel Tout bleu et Blanc</h4>
@@ -256,7 +264,7 @@
                     <article class="port">
                         <a class="linkactivity">
                             <div class="conteneur-image-large">
-                                <img class="image-vignette" src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                                <img class="image-vignette-activity" src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                             </div>
                             <h3 class="title-vignete-activity">Vieux Port</h3>
                         </a>
@@ -265,41 +273,41 @@
                         <article class="fort">
                             <a class="linkactivity">
                                 <div class="conteneur-image-fort">
-                                    <img class="image-vignette" src="img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                                    <img class="image-vignette-activity" src="img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                                 </div>
                                 <h3 class="title-vignete-activity">Fort de Pomègues</h3>
                             </a>
                         </article>
-                        <article class="iles">
+                        <article class="iles vignette-activity">
                             <a class="linkactivity">
                                 <div class="conteneur-image-iles">
-                                    <img class="image-vignette" src="img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                                    <img class="image-vignette-activity" src="img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                                 </div>
                                 <h3 class="title-vignete-activity">Îles du Frioul</h3>
                             </a>
                         </article>
                     </div>
-                    <article class="calanques">
+                    <article class="calanques vignette-activity">
                         <a class="linkactivity">
                             <div class="conteneur-image-large">
-                                <img class="image-vignette" src="img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                                <img class="image-vignette-activity" src="img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                             </div>
                             <h3 class="title-vignete-activity">Parc National des Calanques</h3>
                         </a>
                     </article>
                     <div class="garde-longchamp" >
-                        <article class="garde">
+                        <article class="garde vignette-activity">
                             <a class="linkactivity">
-                            <div class="conteneur-image-garde" >
-                                <img class="image-vignette" src="img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                            </div>
+                                <div class="conteneur-image-garde" >
+                                <img class="image-vignette-activity" src="img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                                </div>
                                 <h3 class="title-vignete-activity">Notre-Dame-de-la-Garde</h3>
                             </a>
                         </article>
-                        <article class="longchamp">
+                        <article class="longchamp vignette-activity">
                             <a class="linkactivity">
                             <div class="conteneur-image-longchamp">
-                                <img class="image-vignette" src="img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                                <img class="image-vignette-activity" src="img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                             </div>
                                 <h3 class="title-vignete-activity">Parc Longchamp</h3>
                             </a>
@@ -329,7 +337,5 @@
                 <p>Nous contacter</p>
             </div>
         </footer>
-
-        
     </body>
 </html>
