@@ -14,7 +14,7 @@ gris            #F2F2F2
 /*BODY*/
 }
 body{
-    margin: 0;
+    margin: auto;
     max-width: 1440px;
     font-family: "raleway", sans-serif;
     box-sizing: border-box;
@@ -40,7 +40,7 @@ nav{
 }
 .nav-element{
     align-items: center;
-    padding: 45px 20px 0 20px;
+    padding: 47px 20px 0 20px;
 }
 a{
     font-size: 17px;
@@ -53,8 +53,6 @@ a{
     border-top: 4px solid #0065FC;
     max-width: 50%;
 }
-.activites-nav{max-width: 50%;}
-
 .activites-nav:hover{
     color: #0065FC;
     border-top: 4px solid #0065fc;
@@ -83,10 +81,8 @@ main p{
 .search{
     display: flex;
     height: 50px;
-    min-width: 335px;
     margin-left: 45px;
     margin-right: 45px;
-
 }
 .search i{
     padding: 15px 19px;
@@ -99,7 +95,7 @@ input[type=search]{
     border-left: 0;
     border-right: 0;
     font-weight: 700;
-    font-size: large;
+    font-size:small;
     font-family: "raleway", sans-serif;
 }
 .search-button{
@@ -114,7 +110,6 @@ input[type=search]{
     cursor: pointer;
 }
 .search-loupe{display: none;}
-
 .search-button:hover{background-color: #134ea5;}
 
 /*FILTERS*/
@@ -122,12 +117,10 @@ input[type=search]{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     font-family: "raleway",sans-serif;
     margin: 20px 0 20px 0;
-
 }
 .filters-selection{
     display: flex;
@@ -183,6 +176,7 @@ input[type=search]{
     margin: 0;
     margin-left: 15px;
 }
+
 /*HEBERGEMENTS*/
 .host{
     display: flex;
@@ -260,8 +254,8 @@ section span{font-size: 15px;}
 .more{
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 0px 0 20px 30px;}
-
+    margin: 0px 0 20px 30px;
+}
 .linkmore{
     padding: 2px;
     border-radius: 1rem;
@@ -364,7 +358,7 @@ aside p{
     justify-content: space-evenly;
 }
 .linkactivity{
-    width: 302px;
+    width: 100%;
     height: 100%;
     padding: 0;
 }
@@ -372,11 +366,13 @@ aside p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 302px;
 }
 
-.fort-iles, .garde-longchamp{
+.fort, .iles, .garde, .longchamp{
+    display: flex;
     justify-content: space-between;
-    max-width: 302px;
+    
 }
 .port, .fort, .iles, .calanques, .garde, .longchamp{
     border-radius: 1rem;
@@ -394,7 +390,7 @@ aside p{
 }
 .fort{
     width: 100%;
-    max-height: 240px;
+    height: 240px;
 }
 .conteneur-image-fort{
     width: 100%;
@@ -409,7 +405,7 @@ aside p{
     height: 70%;
 }
 .garde{
-    max-width: 100%;
+    width: 100%;
     height: 195px;
 }
 .conteneur-image-garde{
@@ -417,8 +413,8 @@ aside p{
     height: 75%;
 }
 .longchamp{
-    max-width: 100%;
-    max-height: 210px;
+    width: 100%;
+    height: 210px;
 }
 .conteneur-image-longchamp{
     width: 100%;
@@ -435,6 +431,7 @@ aside p{
     box-shadow: 1px 1px 0.3em #576985;
     cursor: pointer;
 }
+
 /*FOOTER*/
 footer{
     display: flex;
@@ -484,13 +481,8 @@ footer p{margin-top: 0;}
         border-bottom: 3px solid #F2F2F2
     }
     .activites-nav:hover{border-top: 0;}
-
     .titleinfo, .title-host, .more, .title-activity{margin-left: 20px;}
-
-    .search{
-        margin:15px;
-        max-width: 100%;
-    }
+    .search{margin-left: 25px;}
     .search-button{display: none;}
 
     .search-loupe{
@@ -500,13 +492,12 @@ footer p{margin-top: 0;}
         background-color: #0065FC;
         color: white;
     }
-    .fas.fa-search{background-color: #0065FC;
-    border-radius: 0 1rem 1rem 0;}
+    .fas.fa-search{
+        background-color: #0065FC;
+        border-radius: 0 1rem 1rem 0;}
 
     .filters h3, .filters-button{ margin-left: 15px;}
-
     .filters-button{margin-bottom: 10px;}
-
     .info{margin-left: 15px;}
 
     .host{
@@ -527,20 +518,18 @@ footer p{margin-top: 0;}
         width: 100%;
         margin: 0 20px 15px 20px;
     }
-    .all-activity article{
-        margin: 10px 0;
-    }
-    .conteneur-image-large{
-        height:min-content;
-    }
+    .all-activity{margin: 0 20px;}
+
     footer{
         display: flex;
         flex-direction:column;
         margin-top: 15px;
+        width: 100%;
     }
     .about-footer, .host-footer, .assistance-footer{
-        margin-left: 45px;
+        margin-left: 35px;
         margin-top: 0;
+        width: 100%;
     }
     footer p{
         display: inline;
@@ -552,13 +541,9 @@ footer p{margin-top: 0;}
         max-width: 100%;
         max-height: 100%;
     }
-    .vignette{
-        max-width: 100%;
-    }
-    .filters-selection{
-        margin-left: 30px;
-    }
+    .filters-selection{margin-left: 30px;}
     .filters-button{margin-bottom: 10px;}
+
     section{
         display: flex;
         width: 100%;
@@ -570,15 +555,17 @@ footer p{margin-top: 0;}
         flex-direction: column;
         max-width: 100%;
     }
-    .vignette-popular{
-        width: 90%;
-    }
-    .all-activity article{
-        margin: 10px 0;
-    }
-@media only screen and (max-width:602px){
-    .conteneur-image-large{
-        height:min-content;
-    }
+    .vignette-popular{width: 90%;}
 }
+@media only screen and (max-width:601px){
+    .vignette-activity, .linkactivity{
+        height: 180px;
+        max-width: 100%;
+    }
+    .conteneur-image-fort, .conteneur-image-garde, .conteneur-image-iles, .conteneur-image-large, .conteneur-image-longchamp, .image-vignette-activity{
+        height: 135px;
+        width: 100%;
+    }
+    .fort-iles, .garde-longchamp{ max-width: 100%;}
+    .all-activity{margin: 0 20px;}
 }  
