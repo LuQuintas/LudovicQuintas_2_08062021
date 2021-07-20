@@ -35,7 +35,7 @@ nav{
 }
 .nav-element{
     align-items: center;
-    padding: 49px 20px 0 20px;
+    padding: 48px 20px 0 20px;
 }
 a{
     font-size: 17px;
@@ -448,6 +448,8 @@ footer h2{
 }
 footer p{margin-top: 0;}
 
+                 /* Media Queries  */
+
 @media only screen and (max-width: 527px){
     header{
         display: flex;
@@ -529,6 +531,7 @@ footer p{margin-top: 0;}
         width: 100%;
     }
 }
+
 @media only screen and (min-width: 528px) and (max-width: 1300px){
     .host{
         max-width: 100%;
@@ -552,6 +555,7 @@ footer p{margin-top: 0;}
     .lien-vignette-popular{width: 100%;}
     .conteneur-image-popular{width: 40%;}
 }
+
 @media only screen and (max-width:603px){
     .vignette-activity, .linkactivity{
         height: 180px;
