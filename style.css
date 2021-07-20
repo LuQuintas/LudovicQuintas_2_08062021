@@ -1,13 +1,8 @@
-/* color
-bleu            #0065FC
-plus claire     #DEEBFF
-gris            #F2F2F2
-*/
-@font-face {
+@font-face{
     font-family:"raleway";
     src: url(fonts/Raleway-VariableFont_wght.ttf);
 }
-@font-face {
+@font-face{
     font-family: "raleaway-italic";
     src: url(fonts/Raleway-Italic-VariableFont_wght.ttf);
 
@@ -40,7 +35,7 @@ nav{
 }
 .nav-element{
     align-items: center;
-    padding: 47px 20px 0 20px;
+    padding: 49px 20px 0 20px;
 }
 a{
     font-size: 17px;
@@ -60,6 +55,7 @@ a{
 .sign{
     padding: 0;
     margin-right: 20px;
+    margin-left: 20px;
     font-weight:800;
     color: #0065FC;
 }
@@ -95,7 +91,7 @@ input[type=search]{
     border-left: 0;
     border-right: 0;
     font-weight: 700;
-    font-size:small;
+    font-size: 17px;
     font-family: "raleway", sans-serif;
 }
 .search-button{
@@ -214,7 +210,7 @@ section{
     border: 6px solid #ffff;
     border-radius: 1rem;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 0.8em gray;
+    box-shadow: 3px 3px 0.8em gray;
     transition:0.2s;
 }
 .vignette:hover{
@@ -254,7 +250,7 @@ section span{font-size: 15px;}
 .more{
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 0px 0 20px 30px;
+    margin: 10px 0 20px 30px;
 }
 .linkmore{
     padding: 2px;
@@ -275,7 +271,7 @@ i[data-selected="false"]{color: #F2F2F2;}
 aside{
     display: flex;
     flex-direction: column;
-    max-width: 420px;
+    width: 420px;
     height: 630px;
 }
 .header-popular{
@@ -300,7 +296,6 @@ aside{
     flex-direction:row;
     width: 335px;
     height: 135px;
-    background-color: #ffff;
     border: 5px solid #ffff;
     border-radius: 1rem;
     box-shadow: 3px 3px 0.8em gray;
@@ -315,7 +310,7 @@ aside{
     padding:0;
 }
 .conteneur-image-popular{
-    max-width: 130px;
+    width: 130px;
     height: 100%;
 }
 .image-vignette-popular{
@@ -326,6 +321,7 @@ aside{
 }
 .info-image-popular{
     display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -452,7 +448,7 @@ footer h2{
 }
 footer p{margin-top: 0;}
 
-@media only screen and (max-width: 524px){
+@media only screen and (max-width: 527px){
     header{
         display: flex;
         position: relative;
@@ -481,9 +477,12 @@ footer p{margin-top: 0;}
         border-bottom: 3px solid #F2F2F2
     }
     .activites-nav:hover{border-top: 0;}
-    .titleinfo, .title-host, .more, .title-activity{margin-left: 20px;}
-    .search{margin-left: 25px;}
+
+    .titleinfo, .title-host, .more, .title-activity, .logo, .search,
+     .info, .filters h3, .filters-selection, .all-activity{margin-left: 25px;
+    }
     .search-button{display: none;}
+    .filters-button{margin: 0 5px 10px 0}
 
     .search-loupe{
         display: block;
@@ -496,19 +495,15 @@ footer p{margin-top: 0;}
         background-color: #0065FC;
         border-radius: 0 1rem 1rem 0;}
 
-    .filters h3, .filters-button{ margin-left: 15px;}
-    .filters-button{margin-bottom: 10px;}
-    .info{margin-left: 15px;}
-
     .host{
         display: flex;
         max-width: 100%;
         max-height: 100%;
     }
     aside{border-radius: 0;
-        max-width: 100%;
+        width: 100%;
     }
-    
+
     section{
         display: flex;
         background-color: inherit;
@@ -516,10 +511,8 @@ footer p{margin-top: 0;}
     }
     .vignette, .vignette-popular{
         width: 100%;
-        margin: 0 20px 15px 20px;
+        margin: 0 20px 15px 25px;
     }
-    .all-activity{margin: 0 20px;}
-
     footer{
         display: flex;
         flex-direction:column;
@@ -527,7 +520,7 @@ footer p{margin-top: 0;}
         width: 100%;
     }
     .about-footer, .host-footer, .assistance-footer{
-        margin-left: 35px;
+        margin-left: 25px;
         margin-top: 0;
         width: 100%;
     }
@@ -536,7 +529,7 @@ footer p{margin-top: 0;}
         width: 100%;
     }
 }
-@media only screen and (min-width: 524px) and (max-width: 1300px){
+@media only screen and (min-width: 528px) and (max-width: 1300px){
     .host{
         max-width: 100%;
         max-height: 100%;
@@ -553,11 +546,13 @@ footer p{margin-top: 0;}
     aside{
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        width: 100%;
     }
     .vignette-popular{width: 90%;}
+    .lien-vignette-popular{width: 100%;}
+    .conteneur-image-popular{width: 40%;}
 }
-@media only screen and (max-width:601px){
+@media only screen and (max-width:603px){
     .vignette-activity, .linkactivity{
         height: 180px;
         max-width: 100%;
