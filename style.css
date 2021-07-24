@@ -362,7 +362,7 @@ aside p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 302px;
+    width: 302px;
 }
 
 .fort, .iles, .garde, .longchamp{
@@ -438,15 +438,13 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     width: 33%;
-    margin-top: 45px;
 }
-.about-footer{ margin-left: 45px;}
-
 footer h2{
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
+    padding-left: 45px;
     font-size: 20px;
 }
-footer p{margin-top: 0;}
+footer p{padding: 0 0 0 45px;}
 
                  /* Media Queries  */
 
@@ -478,7 +476,10 @@ footer p{margin-top: 0;}
         padding-bottom: 15px;
         border-bottom: 3px solid #F2F2F2
     }
-    .activites-nav:hover{border-top: 0;}
+    .activites-nav:hover{
+        border-top: 0;
+        border-bottom: 3px solid #0065FC;
+    }
 
     .titleinfo, .title-host, .more, .title-activity, .logo, .search,
      .info, .filters h3, .filters-selection, .all-activity{margin-left: 25px;
@@ -522,13 +523,17 @@ footer p{margin-top: 0;}
         width: 100%;
     }
     .about-footer, .host-footer, .assistance-footer{
-        margin-left: 25px;
+        flex-direction: initial;
         margin-top: 0;
         width: 100%;
     }
     footer p{
         display: inline;
         width: 100%;
+        padding-left: 25px;
+    }
+    footer h2{
+        padding-left: 25px;
     }
 }
 
@@ -559,12 +564,12 @@ footer p{margin-top: 0;}
 @media only screen and (max-width:603px){
     .vignette-activity, .linkactivity{
         height: 180px;
-        max-width: 100%;
+        width: 100%;
     }
     .conteneur-image-fort, .conteneur-image-garde, .conteneur-image-iles, .conteneur-image-large, .conteneur-image-longchamp, .image-vignette-activity{
         height: 135px;
         width: 100%;
     }
-    .fort-iles, .garde-longchamp{ max-width: 100%;}
+    .fort-iles, .garde-longchamp{ width: 100%;}
     .all-activity{margin: 0 20px;}
 }  
